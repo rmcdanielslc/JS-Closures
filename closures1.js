@@ -54,15 +54,6 @@ return friendcaller
 }
 makeCall()
 
-
-
-
-
-
-
-
-
-
 /******************************************************************************\
 	#PROBLEM-03
 \******************************************************************************/
@@ -77,13 +68,11 @@ function makeCounter(){
     return num;
   }
 }
-
-
-var count = makeCounter();
-count(); // 1
-count(); // 2
-count(); // 3
-count(); // 4
+  var count = makeCounter();
+count(1);
+count(2);
+count(3);
+count(4);
 
 
 
@@ -105,17 +94,7 @@ for incrementing the value once. The second function is called dec, this
 function is responsible for decrementing the value by one. You will need to use
 the module pattern to achieve this. */
 
-function counterFactory(value) {
 
-  // Code here.
-
-
-  return {
-  }
-}
-
-
-counter = counterFactory(10);
 
 
 
@@ -142,8 +121,7 @@ function motivation(firstname, lastname){
     return welcomeText + firstname + ' ' +lastname + '.'
   }
 
-
-  return message();
+return message();
 
 }
 
@@ -185,12 +163,13 @@ var module = (function() {
     publicMethod: function(){
       privateMethod()
     }
+
+    }
   };
 
 })();
 
-// Uncomment this after you create your public method
-//   module.publicMethod();
+//module.publicMethod();
 
 
 
@@ -237,11 +216,13 @@ var funcArray = [];
 
 /*
   Make the following code work
+
   funcArray[0]() //0
   funcArray[1]() //1
   funcArray[2]() //2
   funcArray[3]() //3
   funcArray[4]() //4
   funcArray[5]() //5
+
   *Hint: Don't let this fool you. Break down what's really happening here.
 */
